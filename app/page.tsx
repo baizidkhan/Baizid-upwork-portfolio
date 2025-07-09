@@ -371,7 +371,7 @@ export default function Portfolio() {
                         </div>
                         <div className="space-y-3 sm:space-y-4">
                           <div>
-                            <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200">WordPress Customization Expert</h4>
+                            <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-200">WordPress Developer</h4>
                             <p className="text-gray-600 dark:text-gray-400">eCommerce & Business Websites</p>
                           </div>
                           <div className="flex items-center justify-between">
@@ -385,7 +385,9 @@ export default function Portfolio() {
                             </div>
                           </div>
                           <MagneticButton
-                            className="w-full border-green-600 dark:border-green-400 text-green-600 dark:text-green-400 hover:bg-green-50 dark:hover:bg-green-900/30 bg-transparent transition-all duration-200 border-2 rounded-lg px-4 py-2"
+                            variant="material"
+                            color="blue"
+                            className="w-full text-white border-2 border-white px-4 py-2"
                             onClick={() =>
                               window.open(
                                 "https://www.upwork.com/freelancers/~010bf9d15201f00830?mp_source=share",
