@@ -205,7 +205,7 @@ export default function Portfolio() {
           setTimeout(() => {
             setShowWelcome(false)
             setAnimationComplete(true)
-          }, 1000)
+          }, 100)
           return prev
         }
       })
@@ -269,7 +269,7 @@ export default function Portfolio() {
               </TextReveal>
 
               <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl text-blue-600 dark:text-blue-400 font-semibold mb-3 sm:mb-4 px-2 sm:px-4 leading-relaxed">
-                WordPress Customization Expert | Business Analyst @ GeekSSort
+                WordPress Developer | Business Analyst <a href="https://geekssort.com/">@GeekSSort</a>
               </h2>
 
               <TextReveal>
@@ -280,13 +280,16 @@ export default function Portfolio() {
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 px-4 sm:px-0">
                 <MagneticButton
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 w-full sm:w-auto rounded-lg"
+                  variant="material"
+                  color="blue"
+                  className="text-white border-2 border-white"
                   onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
                 >
                   View My Work
                 </MagneticButton>
                 <MagneticButton
-                  className="border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base bg-transparent shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 w-full sm:w-auto border-2 rounded-lg"
+                  variant="outline"
+                  className="border-blue-600 text-blue-600 bg-white hover:bg-blue-50 hover:text-blue-700"
                   onClick={() => window.open("https://tidycal.com/baizidkhan/30-minute-meeting", "_blank")}
                 >
                   <Calendar className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
@@ -998,8 +1001,8 @@ export default function Portfolio() {
                                 {spec}
                               </Badge>
                             </motion.div>
-                          ),
-                        )}
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </CardContent>
@@ -1291,14 +1294,17 @@ export default function Portfolio() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
                   <MagneticButton
-                    className="bg-white text-blue-600 hover:bg-gray-100 px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 rounded-lg"
+                    variant="material"
+                    color="blue"
+                    className="text-white border-2 border-white"
                     onClick={() => window.open("https://tidycal.com/baizidkhan/30-minute-meeting", "_blank")}
                   >
                     <Calendar className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                     Get Free Consultation
                   </MagneticButton>
                   <MagneticButton
-                    className="border-white text-white hover:bg-white hover:text-blue-600 px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base bg-transparent shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 border-2 rounded-lg"
+                    variant="outline"
+                    className="border-blue-600 text-blue-600 bg-white hover:bg-blue-50 hover:text-blue-700"
                     onClick={() =>
                       window.open("https://www.upwork.com/freelancers/~010bf9d15201f00830?mp_source=share", "_blank")
                     }
@@ -1396,5 +1402,5 @@ export default function Portfolio() {
         <BlogModal post={selectedBlogPost} isOpen={isBlogModalOpen} onClose={() => setIsBlogModalOpen(false)} />
       </div>
     </ThemeProvider>
-  )\
+  )
 }

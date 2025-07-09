@@ -12,12 +12,12 @@ export function Preloader() {
       setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(timer)
-          setTimeout(() => setLoading(false), 500)
+          setTimeout(() => setLoading(false), 50)
           return 100
         }
-        return prev + Math.random() * 15
+        return prev + 40 // much faster progress
       })
-    }, 100)
+    }, 30) // faster interval
 
     return () => clearInterval(timer)
   }, [])
