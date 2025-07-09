@@ -25,7 +25,7 @@ interface BlogCardProps {
 
 export function BlogCard({ post, onReadMore }: BlogCardProps) {
   return (
-    <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group border-0 shadow-md">
+    <Card className="overflow-hidden border-2 border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg rounded-lg transition-all duration-300 group">
       <div className="relative overflow-hidden">
         <img
           src={post.image || "/placeholder.svg"}
@@ -35,7 +35,7 @@ export function BlogCard({ post, onReadMore }: BlogCardProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       </div>
-      <CardContent className="p-4 sm:p-5 lg:p-6">
+      <CardContent className="p-6 min-h-[320px] flex flex-col justify-between">
         <div className="flex items-center justify-between mb-2 sm:mb-3">
           <Badge variant="secondary" className="text-xs bg-blue-50 text-blue-700">
             {post.category}

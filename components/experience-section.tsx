@@ -111,9 +111,9 @@ export function ExperienceSection() {
                       transition={{ type: "spring", stiffness: 300 }}
                     >
                       <Card
-                        className={`border-2 border-${exp.color}-100 dark:border-${exp.color}-800 hover:border-${exp.color}-200 dark:hover:border-${exp.color}-700 transition-all duration-300 hover:shadow-xl bg-white dark:bg-gray-900`}
+                        className="border-2 border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg rounded-lg transition-all duration-300 bg-white dark:bg-gray-900"
                       >
-                        <CardContent className="p-8">
+                        <CardContent className="p-6 min-h-[320px] flex flex-col justify-between">
                           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                             <div>
                               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{exp.title}</h3>

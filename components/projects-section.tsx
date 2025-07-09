@@ -93,7 +93,7 @@ export function ProjectsSection() {
           {projects.map((project, index) => (
             <StaggerItem key={project.title}>
               <motion.div whileHover={{ y: -10 }} transition={{ type: "spring", stiffness: 300 }}>
-                <Card className="h-full overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 group">
+                <Card className="h-full overflow-hidden border-2 border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg rounded-lg transition-all duration-300 group">
                   {/* Project Image */}
                   <div className="relative overflow-hidden">
                     <motion.img
@@ -130,7 +130,7 @@ export function ProjectsSection() {
                     </div>
                   </div>
 
-                  <CardContent className="p-6">
+                  <CardContent className="p-6 min-h-[320px] flex flex-col justify-between">
                     <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
                       {project.title}
                     </h3>

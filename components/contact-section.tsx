@@ -60,7 +60,6 @@ export function ContactSection() {
             {/* CTA Button */}
             <MagneticButton
               variant="black"
-              size="lg"
               onClick={() => document.getElementById("contact-form")?.scrollIntoView({ behavior: "smooth" })}
             >
               <MessageCircle className="w-5 h-5" />
@@ -94,8 +93,8 @@ export function ContactSection() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
-                    <Card className="p-6 hover:shadow-lg transition-all duration-300 border-0 bg-white dark:bg-gray-700">
-                      <CardContent className="p-0">
+                    <Card className="p-6 border-2 border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg rounded-lg bg-white dark:bg-gray-700 transition-all duration-300">
+                      <CardContent className="p-6 min-h-[160px] flex flex-col justify-center">
                         <div className="flex items-center space-x-4">
                           <div className="p-3 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 rounded-lg">
                             <info.icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
@@ -129,8 +128,8 @@ export function ContactSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <Card className="p-8 shadow-xl border-0 bg-white dark:bg-gray-700">
-                <CardContent className="p-0">
+              <Card className="p-8 border-2 border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg rounded-lg bg-white dark:bg-gray-700 transition-all duration-300">
+                <CardContent className="p-6 min-h-[320px] flex flex-col justify-center">
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send Message</h3>
                   <ContactForm />
                 </CardContent>
